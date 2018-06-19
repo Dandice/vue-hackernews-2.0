@@ -1,0 +1,101 @@
+#pc_top_dock {
+    position: fixed;
+    z-index: 1;
+    background: #f0f0f0;
+    border-bottom: 1px solid #d7d7d7;
+    top: -70px;
+    font-size: 14px;
+    min-width: 1160px;
+    height 70px;
+    width: 100%;
+    box-sizing border-box;
+    .pc_top_dock_con {
+        width: 1160px;
+        position: relative;
+        margin: auto;
+        height 70px;
+    }
+    .common_block_zan {
+        height 70px;
+        right 0;
+    }
+    .left {
+        .title {
+            font-size: 14px;
+            color: #323232;
+            font-weight: 700;
+            white-space: nowrap;
+            max-width: 700px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+    }
+    .top_dock_opt {
+        width: 377px;
+        .rtt-wrap {
+            position: fixed;
+            right: calc(50% - 580px);
+            top: 70px;
+            opacity 0;
+            transition: all 1.5s linear;
+        }
+        .rttshow {
+            opacity 1;
+        }
+        .rtt-triangle {
+            margin: -12px 0 0 132px;
+            width: 0;
+            height: 0;
+            border: 6px dashed transparent;
+            border-bottom: 6px solid #3dbd64;
+        }
+        .rtt-con {
+            width: 265px;
+            padding-left: 20px;
+            line-height: 50px;
+            background: #40c067;
+            color: #fff;
+            font-size: 14px;
+            border-radius: 3px;
+        }
+        .rtt-close {
+            cursor pointer;
+        }
+        .rtt-close:before {
+            cursor: pointer;
+            content: '\ea29';
+            font-size: 25px;
+            vertical-align: -8px;
+        }
+    }
+}
+
+.popup {
+    animation: popup 0.2s ease 1s;
+    animation-fill-mode: forwards;
+}
+
+.popupmini {
+    animation: popupmini 0.2s ease 0.1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes popupmini {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, -70px);
+    }
+}
+
+@keyframes popup {
+    from {
+        transform: translate(0, 0);
+    }
+
+    to {
+        transform: translate(0, 70px);
+    }
+}

@@ -1,0 +1,83 @@
+#h5_recommend {
+    width: 100%;
+    .rec_yj_title {
+        line-height 60px;
+        font-size 16px;
+        font-weight 700;
+        color: rgba(0,0,0,.8)
+    }
+    .rec_yj {
+        padding: 0 15px;
+        .yj_item {
+            display flex;
+            padding: 15px 0;
+            border-top: 1px solid #ececec;
+            .left {
+                width: 25%;
+                margin-right: 10px;
+                position: relative;
+                padding-top: 25%;
+                img {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    height: 100%;
+                    border-radius 4px;
+                    z-index -1;
+                }
+            }
+            .right {
+                flex: 1;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+                .title {
+                    color: rgba(0,0,0,.8);
+                    font-size 14px;
+                    font-weight: 700;
+                    display: -webkit-box;
+                    -webkit-box-orient: vertical;
+                    -webkit-line-clamp: 2;
+                    max-height 50px;
+                    overflow hidden;
+                }
+                .pv {
+                    flex: 1;
+                    font-size: 12px;
+                    color: #959595;
+                    height 12px;
+                    img {
+                        width: 12px;
+                        margin-right: 3px;
+                    }
+                }
+                span {
+                    background: #0cbf79;
+                    font-size: 12px;
+                    color: #fff;
+                    border-radius: 15px;
+                    padding: 0 8px;
+                }
+            }
+        }
+    }
+    .rec_place {
+        padding: 15px;
+        .rec_place_con {
+            background-image url("img/rec_place.svg");
+            background-repeat no-repeat;
+            background-size: 100%;
+            text-align center;
+            font-size 16px;
+            color: #0CBF79;
+            padding: 15px 0 30px;
+            img {
+                margin-left 5px;
+                width: 7px;
+            }
+        }
+    }
+    img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,13 @@
+{
+    "name": "bbs",
+    "watch": true,
+    "script": "server.js",
+    "instances": 16,
+    "cwd": "./",
+    "exec_mode": "cluster",
+    "max_memory_restart": "1000M",
+    "env": {
+        "NODE_ENV": "production"
+    },
+    "ignore_watch" : ["node_modules", "src/mockServer",".git","src/demo"]
+}

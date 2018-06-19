@@ -1,0 +1,83 @@
+
+#edui1_fontcontrol {
+    position absolute;
+    visibility hidden;
+    justify-content: space-around;
+    font-size 14px;
+    background #282828;
+    opacity 0.95;
+    border-radius 4px;
+    height 40px;
+    display: flex;
+    padding: 0 10px;
+    z-index 999;
+    .edit_font_base {
+        .iconfont {
+            color: #fff;
+        }
+        .weight, .color, .title, .text, .link {
+            padding: 0 12px;
+            cursor pointer;
+        }
+        .line {
+            padding: 0 5px;
+        }
+        .weight:hover, .color:hover, .title:hover, .text:hover, .link:hover {
+            color: #10b041;
+        }
+        .active {
+            color: #10b041;
+        }
+        .edit_font_box {
+            line-height 42px;
+        }
+        .arrow {
+            border-left: 6px solid transparent;
+            border-right: 6px solid transparent;
+            bottom: -6px;
+            border-top: 6px solid #282828;
+            position: absolute;
+            left: 50%;
+            width: 0;
+            height: 0;
+            overflow: hidden;
+            margin-left: -3px;
+        }
+        input {
+            color: #fff;
+            border: 0;
+            background: none;
+            height: 42px;
+            line-height: 32px;
+            margin-right 20px;
+            width: 270px;
+            outline none;
+        }
+        .enter {
+            width: 20px;
+            height 20px;
+            margin-right 5px;
+        }
+    }
+    .edit_color {
+        div {
+            width: 16px;
+            height 16px;
+            margin: 0 5px;
+            border: 1px solid #959595;
+        }
+    }
+    ::-moz-placeholder {
+        color: #AEAEAE;
+    }
+
+    ::-webkit-input-placeholder {
+        color: #AEAEAE;
+    }
+
+    :-ms-input-placeholder {
+        color: #AEAEAE;
+    }
+}
+
+

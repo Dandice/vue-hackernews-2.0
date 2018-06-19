@@ -1,0 +1,163 @@
+
+#detail_con {
+    width: 100%;
+    box-sizing: border-box;
+    color: rgba(0, 0, 0, .8);
+    font-size 16px;
+    padding-top 15px;
+    .loading {
+        padding: 30px 0;
+        .block {
+            height: 16px;
+            margin: 0 0 10px;
+            background-color: #f5f5f5;
+        }
+        .long_block {
+            animation: longLoading 1s ease-in-out infinite;
+        }
+        .short_block {
+            animation: shortLoading 1s ease-in-out infinite;
+        }
+    }
+    .load_error {
+        color: rgba(0, 0, 0, .6);
+        font-size 18px;
+        text-align: center;
+        margin: 50px 0;
+        cursor pointer;
+        img {
+            width: 16px;
+            margin-left: 10px;
+        }
+    }
+    .sip_rep_wrap .content {
+        min-height: 120px;
+    }
+    .detail_wrap {
+        overflow hidden;
+    }
+    strong {
+        font-weight 700;
+    }
+    img {
+        max-width: 750px;
+    }
+    img[data-original] {
+        margin: 5px 0;
+        display: block;
+        background #f0f0f0;
+        opacity 0.6;
+        cursor pointer;
+    }
+    span[data-type=media], span[data-type=video] {
+        iframe {
+            max-height 450px;
+        }
+    }
+    .gradient_img {
+        opacity: 1 !important;
+        transition: all .4s;
+    }
+    .fillimg {
+        width: 89px;
+        display: block;
+        margin: 10px 0 15px;
+        height auto;
+    }
+    .isPreview {
+        visibility visible;
+    }
+    iframe {
+        width 100%;
+        /*max-height 450px;*/
+        border: none;
+    }
+}
+
+#_bbs_img_toolbar {
+    position absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, .75);
+    line-height: 30px;
+    white-space: nowrap;
+    overflow: hidden;
+    color: #fff;
+    cursor pointer;
+    padding: 0 5px;
+    font-size 13px;
+    display none;
+    span {
+        margin 0 5px;
+    }
+    .relation:hover, .cover:hover {
+        color: #10b041;
+        border-bottom 1px solid #10b041;
+    }
+    .zan:after {
+        content '\ea10';
+        color: #fff;
+        font-size 26px;
+        vertical-align: -8px;
+
+    }
+    .zan:hover:after {
+        color: #f5b100;
+    }
+    /*.zaned:after {
+        content '\ea11';
+    }*/
+    .enlarge {
+        padding-left: 9px;
+        background-image: url(//common2.qyerstatic.com/bbs/old/images/detail/icon-imgTool.png);
+        background-position: -29px 7px;
+        background-repeat: no-repeat;
+        width: 12px;
+        color: transparent;
+    }
+    .enlarge:hover {
+        background-position: -29px -16px;
+    }
+    .item {
+        display: inline-block;
+    }
+}
+
+.el-dialog {
+    .flex {
+        display flex;
+    }
+}
+
+@keyframes longLoading {
+
+0% {
+        width: 735px;
+}
+50% {
+        width: 620px;
+}
+100% {
+        width: 735px;
+}
+}
+
+@keyframes shortLoading {
+    0% {
+        width: 520px;
+    }
+    50% {
+        width: 730px;
+    }
+    100% {
+        width: 520px;
+    }
+}
+
+@keyframes mymove {
+
+0% { transform: rotate(0deg);
+}
+100% { transform: rotate(360deg);
+}
+}

@@ -1,0 +1,101 @@
+.rec_bot {
+    .title {
+        margin: 36px 0 20px;
+        font-size: 18px;
+        color: #636363;
+        padding-left: 38px;
+    }
+    #rec_bot_read {
+        margin-top: 38px;
+        border-top: 1px solid #ececec;
+    }
+    #bot_read_wrap {
+        width: 765px;
+        height 230px;
+        .bot_prev_btn:before {
+            content '\ea06';
+        }
+        .bot_next_btn:before {
+            content '\ea08';
+        }
+        .bot_next_btn {
+            text-align center;
+        }
+        .icon {
+            width: 32px;
+            height: 32px;
+            border-radius: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            color: #fff;
+            font-size: 28px;
+            line-height: 32px;
+            cursor pointer;
+        }
+        .cancli:hover {
+            background: rgba(0, 0, 0, 0.4);
+        }
+        .bot_read_con_scroll {
+            width: 682px;
+            overflow: hidden;
+        }
+        .bot_read_con {
+            height: 230px;
+            display: flex;
+            transition: all 0.3s ease-in-out;
+            padding-top 20px;
+            padding-bottom 30px;
+            min-height 100%;
+            .read_item {
+                width: 210px;
+                height 230px;
+                margin-right: 26px;
+                cursor pointer;
+                img {
+                    width: 210px;
+                    height 140px;
+                    vertical-align: top;
+                }
+                .des {
+                    color: rgb(99, 99, 99);
+                    overflow: hidden;
+                    padding: 8px 10px 19px;
+                    border: 1px solid #d7d7d7;
+                    font-size: 14px;
+                    height: 61px;
+                    line-height: 22px;
+                    div {
+                        display: -webkit-box;
+                        overflow: hidden;
+                        -webkit-line-clamp: 3;
+                        -webkit-box-orient: vertical;
+                    }
+                }
+            }
+        }
+    }
+    .bot_ask_con {
+        padding: 18px 16px;
+        background: #fafafa;
+        overflow: hidden;
+        a {
+            width: 244px;
+            display: inline-block;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            color: #636363;
+            font-size: 12px;
+        }
+        a:before {
+            content: '';
+            margin-right: 6px;
+            width: 2px;
+            height: 2px;
+            display: inline-block;
+            background: #636363;
+            border-radius: 50%;
+            vertical-align: 3px;
+        }
+
+    }
+}

@@ -1,0 +1,96 @@
+#hodometer {
+    overflow: hidden;
+    color: #636363;
+    width: 590px;
+    font-size 14px;
+    .allday {
+    }
+    .day_item {
+        height 40px;
+        .hodo_left {
+            width: 60px;
+            text-align: left;
+            display inline-block;
+        }
+
+        .hodo_center {
+            width: 39%;
+            display inline-block;
+            .hodo_icon {
+                position absolute;
+                top: 25px;
+                right 20px;
+            }
+            .hodo_icon:before {
+                content: '\ea14';
+                color: #d7d7d7;
+                cursor: pointer;
+            }
+        }
+
+        .hodo_right {
+            .hotel_info {
+                margin-top: 10px;
+                cursor pointer;
+                display inline-block;
+                div {
+                    margin-right: 0.2rem;
+                }
+
+                .hotel_name {
+                    max-width: 55%;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                    white-space: nowrap;
+                    padding-bottom: 3px;
+                }
+                .hotel_name:hover {
+                    color: #10b041;
+                    border-bottom: 1px dashed #10b041;
+                }
+
+                /*.hotel_currency {
+                    color: #999;
+                }*/
+
+                .book_hotel {
+                    color: #f68e44;
+                    display: inline-block;
+                    line-height: 1.5em;
+                    text-align: center;
+                    border-radius: 2px;
+                    margin-left: 5px;
+                    font-size: 12px;
+                    padding: 0 3px;
+                    border: 1px solid #f68e44;
+                }
+
+            }
+        }
+    }
+    .icomoon {
+        cursor pointer;
+        color: #959595;
+    }
+    .icomoon:before {
+        vertical-align: -8px;
+        font-size: 26px;
+    }
+    .icomoon:hover {
+        color: #40c067;
+    }
+    .checkall:before {
+        content: '\EA07';
+    }
+    .closeall:before {
+        content: '\EA05';
+    }
+    .loading {
+        text-align center;
+        color: #aaa;
+        font-size 16px;
+    }
+
+}
+
+

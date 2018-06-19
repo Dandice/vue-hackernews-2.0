@@ -1,0 +1,291 @@
+#post-hodometer-1 {
+    overflow: hidden;
+    font-size: 16px;
+    color: rgba(0, 0, 0, .8);
+    width: 100%;
+    .title {
+        background #F0F0F0;
+        padding: 0 20px;
+        height 44px;
+        .left {
+            color: #323232;
+            font-size: 16px;
+            font-weight 500;
+        }
+        .right {
+            .btn {
+                padding: 0 11px;
+                line-height: 24px;
+                background: #fff;
+                margin-left: 15px;
+                border-radius: 2px;
+                font-size: 12px;
+                color: #636363;
+                border: 1px solid #c0c0c0;
+                cursor pointer;
+                span {
+                    font-size 18px;
+                    font-weight 400;
+                }
+            }
+            .btn:hover {
+                background: #10b041 !important;
+                color: #fff;
+                border: 1px solid #10b041;
+            }
+        }
+    }
+    .allday {
+        border: 1px solid #e6e8ea;
+    }
+
+    .day_item {
+        display: flex;
+        min-height: 3.5em;
+        border-bottom: 1px solid #e6e8ea;
+
+        .day_number {
+            display: inline-block;
+            width: 50px;
+            line-height: 50px;
+            border: 1px solid #c5c5c5;
+            border-radius: 26px;
+            font-size: 20px;
+            color: #959595;
+            cursor pointer;
+        }
+        .detail_day {
+            margin-top: 8px;
+            font-size: 14px;
+            color: #636363;
+        }
+
+        .hodo_left {
+            padding: 14px 0 19px;
+            width: 21%;
+            text-align: center;
+            border-right: 1px solid #e6e8ea;
+        }
+
+        .hodo_right {
+            position relative;
+            padding: 20px 0 30px 26px;
+            width: 79%;
+            font-size: 14px;
+            .line1 {
+                padding: 4px 0;
+                word-wrap: break-word;
+                word-break: break-all;
+                line-height: 22px;
+                .city {
+                    line-height 28px;
+                }
+                .city_item {
+                    font-size: 16px;
+                    color: #636363;
+                    font-weight: 700;
+                    cursor pointer;
+                }
+                .city_item:hover {
+                    color: #10b041;
+                }
+                [class^="tripmode"]{
+                    margin: 0 5px;
+                    font-size: 26px;
+                }
+                [class^="tripmode"]:before{
+                    vertical-align: -8px;
+                }
+                .tripmode-1:before {
+                    content: '\ea26';
+                    /*vertical-align: -8px;*/
+                }
+                .tripmode-2:before {
+                    content: '\ea42';
+                    /*vertical-align: -8px;*/
+                }
+                .tripmode-3:before {
+                    content: '\ea43';
+                    /*vertical-align: -8px;*/
+                }
+                .tripmode-4:before {
+                    content: '\ea3e';
+                    /*vertical-align: -8px;*/
+                }
+                .tripmode-5:before {
+                    content: '\ea3f';
+                    /*vertical-align: -8px;*/
+                }
+                /*.sip {
+                    margin: 0 5px;
+                }*/
+                .spend {
+                    margin-left: 25px;
+                    padding-left: 26px;
+                    font-size: 14px;
+                    color: #959595;
+                    border-left: 1px solid #d7d7d7;
+                }
+            }
+            .hodo_icon {
+                position absolute;
+                top: 25px;
+                right 20px;
+            }
+            .hodo_icon:before {
+                content: '\ea14';
+                color: #d7d7d7;
+                cursor: pointer;
+                font-size: 28px;
+            }
+            .hodo_icon_wrap:hover {
+                .hodo_icon:before {
+                    color: #10b041;
+                }
+            }
+        }
+
+        .sleep_icon {
+            width: 16px;
+            margin-right: 6px;
+        }
+
+        .hotel_poi {
+            color rgba(0, 0, 0, .6);
+            max-width: 520px;
+            .poi_item {
+                cursor pointer;
+            }
+            .poi_item:hover {
+                color: #10b041;
+            }
+            i:after {
+                content: '\EA15';
+                font-size: 26px;
+                vertical-align: -7px;
+                color: #C0C0C0;
+                margin-left: -6px;
+            }
+        }
+
+        .hotel_info {
+            margin-top: 10px;
+            cursor pointer;
+            display inline-block;
+            i:after {
+                content: '\ea31';
+                font-size: 26px;
+                vertical-align: -8px;
+                color: #C0C0C0;
+                margin-left: -6px;
+            }
+            div {
+                margin-right: 0.2rem;
+            }
+
+            .hotel_name {
+                color: #0CBF79;
+                max-width: 55%;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+                padding-bottom: 3px;
+            }
+            .hotel_name:hover {
+                border-bottom: 1px dashed #10b041;
+            }
+
+            /*.hotel_currency {
+                color: #999;
+            }*/
+
+            .book_hotel {
+                color: #fff;
+                font-size: 0.8em;
+                display: inline-block;
+                width: 1.5em;
+                line-height: 1.5em;
+                text-align: center;
+                border-radius: 2px;
+                background: #c0c0c0;
+                margin-left: 8px;
+            }
+
+        }
+    }
+    .day_item:last-child {
+        border-bottom: none;
+    }
+    .checkall {
+        text-align: center;
+        padding: 10px 0;
+        z-index: 2;
+        width: 100%;
+        color: rgba(0, 0, 0, .4);
+        cursor pointer;
+        img {
+            width: 22px
+        }
+    }
+    .loading {
+        border: 1px solid #ccc;
+        text-align center;
+        color: #aaa;
+        font-size 16px;
+        line-height 40px;
+    }
+    /*.loading {
+        width 22px;
+        margin: auto;
+        display: block;
+        animation: mymove 1.4s infinite linear;
+    }*/
+
+}
+
+.hot_inf_card {
+    .cn_name {
+        font-size: 16px;
+        font-weight: bold;
+    }
+    .en_name {
+        borderBottom: 1px solid #dcdcdc;
+        padding: 10px 0;
+    }
+    .star {
+        margin: 15px 0 25px;
+        .sip {
+            color: #dcdcdc;
+            margin: 0 10px;
+        }
+    }
+    .book {
+        margin-bottom: 20px;
+        .price {
+            color: #F3584F;
+            font-size: 22px
+        }
+        .curency {
+            margin-left: 5px;
+            color: #888;
+        }
+        .tobook {
+            background: #0284D9;
+            color: #fff;
+            font-size: 16px;
+            padding: 15px 25px;
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+        .toairbnb {
+            background: #FF6F3C;
+            color: #fff;
+            font-size: 16px;
+            padding: 15px 25px;
+            border-radius: 4px;
+            margin-left: 20px;
+        }
+    }
+}
+
+

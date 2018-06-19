@@ -1,11 +1,10 @@
 <template>
-    <div class="user-view">
-        mimimi
+    <div class="user">
+        mimimi foxxx
     </div>
 </template>
 
 <script>
-
     export default {
         name: 'user-view',
 
@@ -17,6 +16,7 @@
 </script>
 
 <style lang="stylus">
-
-
+    div {
+        color: red;
+    }
 </style>

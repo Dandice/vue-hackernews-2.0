@@ -1,0 +1,166 @@
+#pc_detail_block {
+    position relative;
+    background #fff;
+    border-bottom: 1px solid #10b041;
+    .search {
+        width 1160px;
+        margin: 23px auto 26px;
+        font-size: 36px;
+        color: #10b041;
+        .h_ta {
+            color: #10b041;
+        }
+        .search_btn {
+            width: 191px;
+            height: 34px;
+            padding: 0 11px;
+            border: 1px solid #d7d7d7;
+            border-radius: 3px;
+            position: relative;
+            float: right;
+            .search_icon {
+                position: absolute;
+                top: 0px;
+                left: 3px;
+            }
+            .search_icon:after {
+                content "\ea09";
+                font-size 25px;
+                color: #ccc;
+                vertical-align 18px;
+            }
+            input {
+                border: none;
+                outline: none;
+                color: #636363;
+                width: 166px;
+                font-size 14px;
+                margin-left: 5px;
+            }
+        }
+    }
+    .banner {
+        line-height: 14px;
+        font-size: 14px;
+        width: 1160px;
+        margin: 0 auto;
+        .icomoon {
+            margin-right: 54px;
+        }
+        .block-ico-2:after {
+            content: "\ea07";
+        }
+        .black {
+            display: inline-block;
+            padding-right: 54px;
+            cursor pointer;
+            padding-bottom 12px;
+            span {
+                color: #323232;
+                font-weight: 700;
+            }
+            i {
+                position: absolute;
+                margin-left: 4px;
+                font-size: 16px;
+                color: #cecece;
+                font-weight: bold;
+            }
+            .rotate_icon {
+                animation: startRotIcon .4s forwards linear;
+            }
+            .can_rotate_icon {
+                animation: canRotIcon .4s forwards linear;
+            }
+        }
+        .black:hover {
+            span, i {
+                color: #10b041;
+            }
+        }
+    }
+    .classify {
+        .col1, .col2, .col3 {
+            width: 240px;
+        }
+        .col4, .col5 {
+            width: 120px;
+        }
+        .col {
+            .title {
+                font-size: 14px;
+                font-weight: 700;
+                margin: 10px 0;
+            }
+            span {
+                display: inline-block;
+                width: 100px;
+                cursor: pointer;
+                height: 23px;
+                overflow: hidden;
+                text-overflow: ellipsis;
+                white-space: nowrap;
+            }
+            span:hover {
+                color: #10b041;
+            }
+        }
+    }
+    .flex {
+        display: flex;
+        flex-wrap: wrap;
+        width: 1160px;
+        margin: auto;
+        box-sizing border-box;
+        padding: 23px 200px 28px 0;
+    }
+    .content {
+        width: 100%;
+        background-color: #f5f5f5;
+        border-top: 1px solid #10b041;
+        border-bottom: 1px solid #10b041;
+        position absolute;
+        z-index 1002;
+        .sharp {
+            position absolute;
+            background-image: url(//common1.qyerstatic.com/bbs/old/images/detail/nav1.png);
+            background-repeat: no-repeat;
+            width: 14px;
+            height: 9px;
+            top: -9px;
+            background-position: 0 -44px;
+        }
+        ul {
+            li {
+                cursor pointer;
+                line-height: 26px;
+                span:hover {
+                    color: #10b041;
+                }
+            }
+        }
+        span {
+            font-size: 12px;
+            color: #636363;
+            line-height: 25px;
+        }
+    }
+}
+
+@keyframes startRotIcon {
+    from {
+        transform rotate(0)
+    }
+    to {
+        transform rotate(180deg)
+    }
+}
+
+@keyframes canRotIcon {
+    from {
+        transform rotate(180deg)
+    }
+    to {
+        transform rotate(0)
+    }
+}
